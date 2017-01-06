@@ -1,9 +1,9 @@
-#include <ESP8266WiFi.h>
-#include <ESP8266HTTPClient.h>
-#include <SPI.h>
+#include "ESP8266WiFi.h"
+#include "ESP8266HTTPClient.h"
+#include "SPI.h"
 #include "MFRC522.h"
 #include "FS.h"
-#include <Hash.h>
+#include "Hash.h"
 
 /* wiring the MFRC522 to NodeMCU ESP8266
 RST     = GPIO16 / D0
@@ -21,8 +21,8 @@ GND     = GND
 
 const char* ssid = "Digital GH Guest";
 const char* password = "dgguest1";
-const char *hashPsk = "marmoset";
-const int accessBit = 4; // DOOR_FRONT
+const char *hashPsk = "SOME RANDOM CHARS";
+const int accessBit = 4;
 
 const char *aclDelim = "|";
 
@@ -172,14 +172,6 @@ void loop() {
     if (digitalRead(RELAY_PIN) != relayState) {
       digitalWrite(RELAY_PIN, relayState);
     }
-  }
-}
-
-// Helper routine to dump a byte array as hex values to Serial
-void dump_byte_array(byte *buffer, byte bufferSize) {
-  for (byte i = 0; i < bufferSize; i++) {
-    Serial.print(buffer[i] < 0x10 ? " 0" : " ");
-    Serial.print(buffer[i], HEX);
   }
 }
 
