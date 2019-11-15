@@ -1,0 +1,57 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+li.nav-divider {
+    padding: 0.5rem;
+    color: lightgrey;
+}
+
+a.navbar-brand {
+    background-image: url('/img/shed-logo-crop.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    width: 100px;
+    background-position: 0 6px;
+    text-indent: 100px;
+    overflow-x: hidden;
+}
+
+ul.pagination {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+span.headerLeft {
+	font-size: 1.2em;
+    text-align: left;
+}
+
+span.headerMiddle {
+    text-align: center;
+}
+
+span.headerRight {
+    text-align: right;
+}
+
+.list .listHeader .attributeName {
+    font-weight: bold;
+}
+
+.list .noResults {
+    text-align: center;
+    opacity: 0.3;
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+.listItem .listItemControls {
+    text-align: right;
+}

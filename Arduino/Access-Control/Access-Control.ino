@@ -356,5 +356,3 @@ bool authCard(char* cardUID) {
   Serial.println("Not Authorised.");
   return false;
 }
-
-
